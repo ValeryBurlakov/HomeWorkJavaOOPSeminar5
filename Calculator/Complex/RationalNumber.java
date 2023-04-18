@@ -1,4 +1,4 @@
-package Ratio;
+package Complex;
 
 class RationalNumber {
     private int numerator, denominator;

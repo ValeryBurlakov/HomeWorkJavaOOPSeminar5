@@ -27,6 +27,11 @@ public class PhoneBook {
         exporter.exportContacts(contacts, filePath);
     }
 
+    public void exportToCSVTAB(String filePath) {
+        CsvExporterNew exporter = new CsvExporterNew();
+        exporter.exportContactsNew(contacts, filePath);
+    }
+
     public void importFromCSV(String filePath) {
         CsvImporter importer = new CsvImporter();
         List<Contact> importedContacts = importer.importContacts(filePath);

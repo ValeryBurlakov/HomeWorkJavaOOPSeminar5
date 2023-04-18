@@ -7,7 +7,6 @@ class ComplexNumber {
         this.imag = imag;
     }
     
-    // Методы для операций с комплексными числами
     public ComplexNumber add(ComplexNumber other) {
         return new ComplexNumber(real + other.real, imag + other.imag);
     }
@@ -31,6 +30,7 @@ class ComplexNumber {
         double newImag = (imag * other.real - real * other.imag) / denominator;
         return new ComplexNumber(newReal, newImag);
     }
+
     @Override
     public String toString() {
         if (imag == 0) {
